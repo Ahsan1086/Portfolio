@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Basic button styling */
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            border: 2px solid #ffbc00;
+            border-radius: 50px;
+            background-color: black;
+            position: relative;
+            overflow: hidden;
+            transition: color 0.4s ease;
+        }
+
+        /* Create an overlay to animate the hover effect */
+        .button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 100%;
+            background-color: #ffbc00;
+            z-index: 0;
+            transition: width 0.5s ease;
+        }
+
+        /* On hover, expand the yellow overlay from right to left */
+        .button:hover::before {
+            width: 100%;
+            left: 0;
+        }
+
+        /* Text and arrow stay on top of the background */
+        .button span {
+            position: relative;
+            z-index: 1;
+            transition: margin-left 0.3s ease;
+        }
+
+        /* Arrow animation on hover */
+        .button:hover span {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Button with "More About Me" text and arrow -->
+    <a href="#" class="button">
+        <span>MORE ABOUT ME →</span>
+    </a>
+
+</body>
+</html>

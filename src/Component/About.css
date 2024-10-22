@@ -1,0 +1,253 @@
+
+.about1 {
+  height: fit-content;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.about1 .backtext{
+  z-index: -1;
+}
+.abouthead{
+  text-align: center;
+  position: relative;
+  font-weight: bolder;
+  padding: 50px 0px;
+}
+
+.backtext{
+  font-size:  100px;
+  letter-spacing: 5px;
+  position: absolute;
+  color: red;
+  color: var(--lightdarksilver);
+  z-index: -1;
+  top: 45%;
+  left: 50%;
+  font-weight: 900;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+}
+.fronttext{
+  font-size: 50px;
+  color:var(--whitesilver);
+  z-index: 2;
+  font-weight: 900;
+
+}
+.me{
+  color: #ffb400;
+  padding-left: 15px;
+}
+
+.about1 h3{
+  color: var(--whitesilver);
+}
+
+.infocontain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about1 .info1 p{
+  font-size: 17px;
+  color: var(--ldsilver);
+  /* font-weight: 400; */
+}
+.info1 .info{
+  color: var(--whitesilver);
+}
+.about1 .card{
+  background-color: transparent;
+  border: 1px solid rgba(192, 192, 192, 0.543);
+  width: 100%;
+  overflow: hidden;
+}
+.about1 .card h1{
+  color: #ffb400;
+  font-weight: bolder;
+  font-size: 50px;
+}
+.about1 .card p{
+  margin: auto;
+  font-size: 15px;
+  position: relative;
+color: var(--whitesilver);
+  text-transform: uppercase;
+
+}
+
+.about1 .card p::before{
+  content: "";
+  height: 2px;
+  width: 40px;
+  background-color:var(--lightdarksilver);
+  position: absolute;
+  left: -50px;
+  top: 15px;
+
+}
+
+
+.progres h2{
+  font-weight: bolder;
+  text-align: center;
+  color: var(--whitesilver);
+  padding: 30px  0px;
+}
+
+.circle{
+  position: relative;
+  height: 130px;
+  width: 130px;
+  background-color: var(--lightdarksilver);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: conic-gradient(#ffb400 0% var(--conic-percentage), var(--lightdarksilver) var(--conic-percentage) 100%);
+}
+.circle::before{
+  content: "";
+  height: 110px;
+  width: 110px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--blackwhite);
+  z-index: 1;
+}
+.circlecontain{
+  /* border: 2px solid red; */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.circle p{
+  color: var(--whitesilver);
+  z-index: 2;
+  font-size: 20px;
+  font-weight: bold;
+
+  margin: auto;
+}
+.circlecontain p{
+  color: var(--whitesilver);
+}
+.experience{
+ height: 100%;
+  overflow:visible;
+}
+.experience .exp-1{
+  position: relative;
+  padding-left: 40px;
+  padding-right: 50px;
+  border-left: 1px solid silver;
+  
+}
+.experience h2{
+  padding: 40px 0px;
+  font-weight: bold;
+color: var(--whitesilver);
+}
+ .exp-1 .expicon{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: auto;
+  font-size: 25px;
+  color: white;
+  background-color: #ffb400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: -20px;
+ }
+.exp-1 .badge{
+  background-color: var(--lightdarksilver);
+  border-radius: 30px;
+  color: var(--whitesilver);
+  /* color: silver; */
+  font-weight: 400;
+}
+.exp-1 h4{
+color: var(--whitesilver);
+text-transform: uppercase;
+font-size: 20px;
+}
+.exp-1 p{
+  color: var(--whitesilver);
+  font-size: 15px;
+}
+.expspan{
+  color: silver;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+
+
+ .button button {
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  font-weight: bolder;
+  background-color: transparent;
+  border: none;
+  color: var(--whitesilver);
+  border: 1px solid #ffb400;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 20px;
+  position: relative;
+  z-index: 1; /* Button content above the animated background */
+  transition: background-color 0.5s ease; /* Smooth transition */
+  overflow: hidden;
+}
+
+ .button .about {
+  height: 100%;
+  width: 50px;
+  background-color: #ffb400;
+  border-radius: 100%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2; 
+}
+
+ .button button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #ffb400;
+  z-index: -1; 
+  transition: right 0.5s ease; 
+}.button:hover button::before {
+  right: 0; 
+}
+
+.button:hover button {
+  background-color: #ffb400;
+  color: white;
+}
+.about1 .button {
+  height: 50px;
+  width: 220px;
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden; 
+}

@@ -1,0 +1,50 @@
+.light-theme{
+  --whitesilver: #666666;  /*  icon ka color */
+  --lightdarksilver:#EEEEEE;   /*  icon ka background */
+  --bgcolor:white;
+  --ldsilver:#a0a0a0;
+  --blackwhite:white;
+  --formcolor:white;
+  --formborder:#666666;
+  ---quotes:black;
+}
+
+.dark-theme{
+  --whitesilver:white;
+  --lightdarksilver:#666666;
+  --bgcolor:black;
+  --ldsilver:#666666;
+  --blackwhite:rgb(19, 19, 19);
+  --formcolor:#666666;
+  --formborder:black;
+  --quotes:white;
+  
+}
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+.App{
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--bgcolor);
+  position: relative;
+}
+.yellow{
+  height: 100%;
+  width: 100%;
+  background-color: #ffb400;
+  transform: rotate(70deg);
+  position: absolute;
+  left: -55%;
+  top: 50px;
+  z-index: 0;
+  overflow: hidden;
+}
+@media (max-width:1010px) {
+  .yellow{
+    display: none;
+  }
+}
