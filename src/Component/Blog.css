@@ -64,3 +64,6 @@
 .firstline{
     color: var(--whitesilver);
 }
+.blogs:hover .blogtitle{
+    color: #ffb400;
+}
